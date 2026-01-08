@@ -1,0 +1,33 @@
+Device: mps
+Total: 37094 | pos=789 neg=36305 pos_rate=0.0213
+Train: 29675 | pos=636 neg=29039 pos_rate=0.0214
+Val:   3709 | pos=78 neg=3631 pos_rate=0.0210
+Test:  3710 | pos=75 neg=3635 pos_rate=0.0202
+epoch=1 train_loss=1.3004 val_loss=1.1275 val_pr_auc=0.10276326672528945 val_roc_auc=0.8791920005084423 val_f1=0.1818 thr=0.655
+epoch=2 train_loss=0.9270 val_loss=0.7473 val_pr_auc=0.11354953864067942 val_roc_auc=0.8967615052715577 val_f1=0.1991 thr=0.740
+epoch=3 train_loss=0.7791 val_loss=0.6819 val_pr_auc=0.13179334847775054 val_roc_auc=0.9062347732135669 val_f1=0.2066 thr=0.870
+epoch=4 train_loss=0.7590 val_loss=0.6737 val_pr_auc=0.13564248583187866 val_roc_auc=0.9092889576227499 val_f1=0.2180 thr=0.865
+epoch=5 train_loss=0.7344 val_loss=0.6758 val_pr_auc=0.1566116822196648 val_roc_auc=0.9125196844833309 val_f1=0.2230 thr=0.785
+epoch=6 train_loss=0.7333 val_loss=0.6488 val_pr_auc=0.1606033234845702 val_roc_auc=0.9197720483867551 val_f1=0.2624 thr=0.865
+epoch=7 train_loss=0.7279 val_loss=0.6405 val_pr_auc=0.17462809606422316 val_roc_auc=0.9218552493132499 val_f1=0.2712 thr=0.875
+epoch=8 train_loss=0.7191 val_loss=0.6495 val_pr_auc=0.20863211186251363 val_roc_auc=0.9242703500483727 val_f1=0.3059 thr=0.880
+epoch=9 train_loss=0.6964 val_loss=0.6165 val_pr_auc=0.21176627049537763 val_roc_auc=0.9275999406817363 val_f1=0.2938 thr=0.880
+epoch=10 train_loss=0.6858 val_loss=0.6477 val_pr_auc=0.26028978913866657 val_roc_auc=0.9275081386070095 val_f1=0.3558 thr=0.915
+epoch=11 train_loss=0.6905 val_loss=0.6018 val_pr_auc=0.24962451369380415 val_roc_auc=0.9340437401577584 val_f1=0.3618 thr=0.840
+epoch=12 train_loss=0.6691 val_loss=0.5981 val_pr_auc=0.3018507788719943 val_roc_auc=0.9372568127731996 val_f1=0.3704 thr=0.840
+epoch=13 train_loss=0.6665 val_loss=0.5700 val_pr_auc=0.2921373781649113 val_roc_auc=0.9408794638758835 val_f1=0.3878 thr=0.885
+epoch=14 train_loss=0.6487 val_loss=0.5837 val_pr_auc=0.2596651731779457 val_roc_auc=0.9391246319089888 val_f1=0.3618 thr=0.915
+epoch=15 train_loss=0.6701 val_loss=0.5839 val_pr_auc=0.2586842732243482 val_roc_auc=0.9332810767677198 val_f1=0.3357 thr=0.880
+Test metrics:
+{
+  "loss": 0.6291616036885511,
+  "roc_auc": 0.9334030261348005,
+  "pr_auc": 0.3060111649593463,
+  "accuracy": 0.9690026954177897,
+  "precision": 0.2872340425531915,
+  "recall": 0.36,
+  "f1": 0.31952662721893493,
+  "threshold": 0.84,
+  "n": 3710
+}
+Saved: outputs/bio_sagpool_seed42_run3/results.json

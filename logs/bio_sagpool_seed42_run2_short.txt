@@ -1,0 +1,21 @@
+Device: mps
+Total: 37094 | pos=789 neg=36305 pos_rate=0.0213
+Train: 29675 | pos=636 neg=29039 pos_rate=0.0214
+Val:   3709 | pos=78 neg=3631 pos_rate=0.0210
+Test:  3710 | pos=75 neg=3635 pos_rate=0.0202
+epoch=1 train_loss=1.3004 val_loss=1.1273 val_pr_auc=0.10286665933720425 val_roc_auc=0.8793085185263648 val_f1=0.1818 thr=0.655
+epoch=2 train_loss=0.9252 val_loss=0.7398 val_pr_auc=0.11539753153804123 val_roc_auc=0.8971781454568566 val_f1=0.2032 thr=0.765
+epoch=3 train_loss=0.7769 val_loss=0.6865 val_pr_auc=0.13423445294518616 val_roc_auc=0.9058675649146594 val_f1=0.2151 thr=0.895
+Test metrics:
+{
+  "loss": 0.6818435522423921,
+  "roc_auc": 0.9126088950022925,
+  "pr_auc": 0.14303090426193774,
+  "accuracy": 0.9609164420485176,
+  "precision": 0.19298245614035087,
+  "recall": 0.29333333333333333,
+  "f1": 0.2328042328042328,
+  "threshold": 0.895,
+  "n": 3710
+}
+Saved: outputs/bio_sagpool_seed42_run2_short/results.json
