@@ -93,7 +93,16 @@ SAGPool 用一个“看过图结构的评分网络”给节点打分，而不是
 
 ### 4.1 数据说明
 
-数据路径：`data/data.tsv`  
+原始数据路径: `data/raw_data.zip`
+解压后运行
+
+```bash
+python process_data.py
+```
+
+得到实验用数据(文件中已经处理好了)
+
+实验用数据路径：`data/data.tsv`  
 列：`CDR3`, `Epitope`, `label`
 
 数据规模与类别分布（全量）：
