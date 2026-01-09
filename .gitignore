@@ -23,6 +23,10 @@ latest.pth
 outputs/**/checkpoints/
 outputs/**/checkpoints/**
 
+# Keep the small, reference checkpoint for the bio_sagpool demo run.
+!outputs/bio_sagpool/checkpoints/
+!outputs/bio_sagpool/checkpoints/best.pt
+
 # Downloaded graph benchmarks (TUDataset creates subfolders under data/)
 data/*/
 
@@ -35,3 +39,4 @@ data/raw_data.tsv
 # IDEs
 .vscode/
 .idea/
+AGENTS.md

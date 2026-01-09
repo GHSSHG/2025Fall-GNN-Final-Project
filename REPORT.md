@@ -75,8 +75,8 @@ SAGPool 用一个“看过图结构的评分网络”给节点打分，而不是
 
 日志文件：
 
-- `logs/repro_sagpool_MUTAG_seed42_full.txt`
-- `logs/repro_sagpool_PROTEINS_seed42_nhid64_fix.txt`
+- `logs/repro_sagpool_MUTAG.txt`
+- `logs/repro_sagpool_PROTEINS.txt`
 
 最终测试集准确率（Test accuracy）：
 
@@ -141,20 +141,20 @@ python process_data.py
 
 早停指标：验证集 **PR-AUC**（Average Precision）。
 
-### 4.4 实验设置（seed=42 随机划分）
+### 4.4 实验设置
 
-按要求用全局随机种子 42 划分：
+按照和 SAGPool 相同方式进行划分：
 
 - Train/Val/Test = 0.8 / 0.1 / 0.1
 
-运行命令见 `README.md`（对应结果目录 `outputs/bio_sagpool_seed42_run3/`）。
+运行命令见 `README.md`（对应结果目录 `outputs/bio_sagpool/`）。
 
 ### 4.5 拓展实验结果
 
 最优验证轮次（best epoch）：`12`  
 最优阈值（val F1 最优阈值）：`0.84`
 
-测试集指标（来自 `outputs/bio_sagpool_seed42_run3/results.json`）：
+测试集指标（来自 `outputs/bio_sagpool/results.json`）：
 
 - ROC-AUC：`0.9334`
 - PR-AUC：`0.3060`

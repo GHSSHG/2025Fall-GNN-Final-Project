@@ -95,7 +95,7 @@ def main() -> None:
     parser.add_argument("--pooling_ratio", type=float, default=0.5)
     parser.add_argument("--dropout", type=float, default=0.5)
     parser.add_argument("--device", type=str, default=None, help="e.g. mps/cpu/cuda")
-    parser.add_argument("--out_dir", type=str, default="outputs/bio_sagpool_seed42")
+    parser.add_argument("--out_dir", type=str, default="outputs/bio_sagpool")
     parser.add_argument("--no_progress", action="store_true", help="Disable tqdm progress bars (clean logs).")
     args = parser.parse_args()
 

@@ -30,4 +30,4 @@ Test metrics:
   "threshold": 0.84,
   "n": 3710
 }
-Saved: outputs/bio_sagpool_seed42_run3/results.json
+Saved: outputs/bio_sagpool/results.json

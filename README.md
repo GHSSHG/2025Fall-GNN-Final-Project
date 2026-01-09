@@ -39,8 +39,8 @@ python -c "import torch; print(torch.__version__, torch.backends.mps.is_availabl
 运行示例（输出建议重定向到 log 文件）：
 
 ```bash
-python -u third_party/SAGPool/main.py --dataset MUTAG --epochs 300 --patience 30 --batch_size 64 --seed 42 > logs/repro_MUTAG.txt 2>&1
-python -u third_party/SAGPool/main.py --dataset PROTEINS --epochs 40 --patience 10 --batch_size 256 --nhid 64 --seed 42 > logs/repro_PROTEINS.txt 2>&1
+python -u third_party/SAGPool/main.py --dataset MUTAG --epochs 300 --patience 30 --batch_size 64 --seed 42 > logs/repro_sagpool_MUTAG.txt 2>&1
+python -u third_party/SAGPool/main.py --dataset PROTEINS --epochs 40 --patience 10 --batch_size 256 --nhid 64 --seed 42 > logs/repro_sagpool_PROTEINS.txt 2>&1
 ```
 
 ## 2. 生物数据拓展：Epitope–CDR3 结合预测
@@ -72,14 +72,13 @@ python -u -m bio_sagpool.train \
   --batch_size 1024 \
   --hidden_dim 64 \
   --aa_emb_dim 16 \
-  --out_dir outputs/bio_sagpool_seed42_run3 \
+  --out_dir outputs/bio_sagpool \
   --no_progress
 ```
 
 输出：
 
-- `outputs/bio_sagpool_seed42_run3/results.json`
-- `outputs/bio_sagpool_seed42_run3/history.json`
+- `outputs/bio_sagpool/results.json`
+- `outputs/bio_sagpool/history.json`
 
 更详细的论文理解、复现结果与拓展分析见 `REPORT.md`。
-
